@@ -1,0 +1,53 @@
+Device options:
+  - MME : Microsoft 사운드 매퍼 - Input   (device #0 with 2 ins 0 outs)
+  - MME : Mic/Line/Inst 1-2(2- Minifuse 2   (device #1 with 2 ins 0 outs)
+  - MME : LOOPBACK Left/Right(2- Minifuse   (device #2 with 2 ins 0 outs)
+  - MME : Microphone Array(디지털 마이크용 인텔® 스   (device #3 with 6 ins 0 outs)
+  - MME : Microsoft 사운드 매퍼 - Output   (device #4 with 0 ins 2 outs)
+  - MME : 스피커(Realtek(R) Audio)   (device #5 with 0 ins 2 outs)
+  - MME : MAIN Left/Right(2- Minifuse 2)   (device #6 with 0 ins 2 outs)
+  - MME : LOOPBACK Left/Right(2- Minifuse   (device #7 with 0 ins 2 outs)
+  - Windows DirectSound : 주 사운드 캡처 드라이버   (device #8 with 2 ins 0 outs)
+  - Windows DirectSound : Mic/Line/Inst 1-2(2- Minifuse 2)   (device #9 with 2 ins 0 outs)
+  - Windows DirectSound : LOOPBACK Left/Right(2- Minifuse 2)   (device #10 with 2 ins 0 outs)
+  - Windows DirectSound : Microphone Array(디지털 마이크용 인텔® 스마트 사운드 기술)   (device #11 with 6 ins 0 outs)
+  - Windows DirectSound : 주 사운드 드라이버   (device #12 with 0 ins 2 outs)
+  - Windows DirectSound : 스피커(Realtek(R) Audio)   (device #13 with 0 ins 2 outs)
+  - Windows DirectSound : MAIN Left/Right(2- Minifuse 2)   (device #14 with 0 ins 2 outs)
+  - Windows DirectSound : LOOPBACK Left/Right(2- Minifuse 2)   (device #15 with 0 ins 2 outs)
+  - ASIO : ASIO4ALL v2   (device #16 with 2 ins 2 outs)
+  - ASIO : MiniFuse ASIO Driver   (device #17 with 4 ins 4 outs)
+  - ASIO : Realtek ASIO   (device #18 with 2 ins 2 outs)
+  - Windows WASAPI : 스피커(Realtek(R) Audio)   (device #19 with 0 ins 2 outs)
+  - Windows WASAPI : MAIN Left/Right(2- Minifuse 2)   (device #20 with 0 ins 2 outs)
+  - Windows WASAPI : LOOPBACK Left/Right(2- Minifuse 2)   (device #21 with 0 ins 2 outs)
+  - Windows WASAPI : LOOPBACK Left/Right(2- Minifuse 2)   (device #22 with 2 ins 0 outs)
+  - Windows WASAPI : Microphone Array(디지털 마이크용 인텔® 스마트 사운드 기술)   (device #23 with 4 ins 0 outs)
+  - Windows WASAPI : Mic/Line/Inst 1-2(2- Minifuse 2)   (device #24 with 2 ins 0 outs)
+  - Windows WDM-KS : Mic/Line/Inst 1-2 (Mic/Line/Inst 1-2)   (device #25 with 2 ins 0 outs)
+  - Windows WDM-KS : LOOPBACK Left/Right (LOOPBACK Left/Right)   (device #26 with 0 ins 2 outs)
+  - Windows WDM-KS : LOOPBACK Left/Right (LOOPBACK Left/Right)   (device #27 with 2 ins 0 outs)
+  - Windows WDM-KS : MAIN Left/Right (MAIN Left/Right)   (device #28 with 0 ins 2 outs)
+  - Windows WDM-KS : 마이크 1 (Realtek HD Audio Mic input with SST)   (device #29 with 2 ins 0 outs)
+  - Windows WDM-KS : 마이크 2 (Realtek HD Audio Mic input with SST)   (device #30 with 4 ins 0 outs)
+  - Windows WDM-KS : Headphones 1 (Realtek HD Audio 2nd output with SST)   (device #31 with 0 ins 2 outs)
+  - Windows WDM-KS : Headphones 2 (Realtek HD Audio 2nd output with SST)   (device #32 with 0 ins 2 outs)
+  - Windows WDM-KS : PC 스피커 (Realtek HD Audio 2nd output with SST)   (device #33 with 2 ins 0 outs)
+  - Windows WDM-KS : Speakers 1 (Realtek HD Audio output with SST)   (device #34 with 0 ins 2 outs)
+  - Windows WDM-KS : Speakers 2 (Realtek HD Audio output with SST)   (device #35 with 0 ins 2 outs)
+  - Windows WDM-KS : PC 스피커 (Realtek HD Audio output with SST)   (device #36 with 2 ins 0 outs)
+  - Windows WDM-KS : 스테레오 믹스 (Realtek HD Audio Stereo input)   (device #37 with 2 ins 0 outs)
+  - Windows WDM-KS : 마이크 배열 1 ()   (device #38 with 4 ins 0 outs)
+  - Windows WDM-KS : 마이크 배열 2 ()   (device #39 with 4 ins 0 outs)
+  - Windows WDM-KS : 마이크 배열 3 ()   (device #40 with 6 ins 0 outs)
+
+Requested devices:
+  In:
+  - (default)
+  Out:
+  - (default)
+
+When running with ASIO, run the following script:
+o = Server.default.options;
+o.device = "ASIO : MiniFuse ASIO Driver";
+Server.default.reboot;
